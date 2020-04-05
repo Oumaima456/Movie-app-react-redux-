@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
+.moviee{
+  position: absolute;
+  box-sizing: border-box;
+  color: white;
+  margin-top: -230px;
+  margin-left: 390px;
+
+
+}
+body{
+  font-family: 'montserrat',sans-serif;
+  background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.searchbox{
+  display: block;
+  width: 80%;
+  height: 20px;
+  padding: 20px;
+  margin: 40px 90px;
+  border: none;
+  outline: none;
+  background: none;
+  background-color: #83191d;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.4s ease-out;
+  
+
+}
+.btn{
+  margin-left: 32%;
+font-size: 10px;
+height: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.searchbox{
+  box-shadow: 0px 0px 35px 10px  rgb(209, 195, 198);
+  position: absolute;
+  margin-top: -248px;
+
+}
+.hello{
+  width: 100%;
+  position: relative;
+  height: 50%;
+
+}
+.film{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+
+
+}
+.img{
+
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  margin: 10px;
+
+
+}
+.div{
+  position: relative;
+  height: 490px;
+  width: 270px;
+  display: flex;
+  margin: 10px;
+padding: 0%; 
+  flex-wrap: wrap;
+}
+h5{
+  color: #83191d;
+  font-family:  URW Chancery L, cursive;
+  font-size: 18px;
+ 
+}
+span{
+  color: rgb(280, 280, 280);
+
+}
+p{
   color: white;
 }
+.rating{
+  font-size: 25px;
 
-.App-link {
-  color: #61dafb;
+
+}
+.rating-filter{
+  font-size: 25px;
+  margin-left: 350px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span{
+  cursor: pointer;
+
+}
+.Modal-cont{
+  width: 210px;
+  height: 230px;
+  display: flex;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  opacity: 0.1;
+}
+.Modal-img{
+width:5vw ;
+margin-left: 40%;
+
+}
+.Modal-cont .Modal-img:hover{
+  width: 5.5vw;
+}
+.MN{
+  margin-top: 5%;
+}
+.Modal-content{
+height: 40vw;
+}
+.Modal-input{
+  height: 40vw;
+  padding: 0;
+
+  
+  
+}
+.Modal-add{
+  width: 210px;
+  height: 230px;
+  
+}
+
+.input{
+  margin-left: 8%;
+  width: 25vw;
+  border-radius: 5px;
+  height: 40px;
+  background-color: #D8DEDE;
+  font-size: 15px;
+}
+.title-input{
+  padding-right: 15px;
+}
+.ligne{
+  margin: 10px;
+}
+.bou{
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-left: 18%;
+  width: 260px;
+  text-align: center ;
+  color: #2D3436  ;
+  background-color: grey;
+  
+
+}
+.Modal-pluus{
+  width:5vw ;
+}
+.description{
+  font-size: 10px;
+  font-family: Trattatello;
+}
+form{
+  height: 50%;
+  width: 50%;
 }
