@@ -22,7 +22,7 @@ class Filmlist extends Component {
 
                     <p className='starrr'><Starsrating starsrate={el.rating} /></p>
                     <p className="description"> {el.discription}</p>
-                    <Link to={`/Discription/${el.id}`} className="link">Discription Link</Link>
+                    <Link to={`/Discription/${el.id}`} className="link">Description Link</Link>
                     <button onClick={()=>this.props.deleteMovie (el.id)} className="btn btn-danger">DELETE</button>
                     <Modals movie={el}/>
                     </div>

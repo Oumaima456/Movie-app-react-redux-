@@ -13,6 +13,7 @@ export class Discription extends Component {
             <div>
                 <h3>Discription page</h3>
                 <h5>{movies.discription}</h5>
+                <h5>{movies.film}</h5>
             </div>
         )
     }

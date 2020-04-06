@@ -1,11 +1,13 @@
-import  React, { Component } from 'react';
+import  React, { Component,Fragment } from 'react';
 import './App.css';
 import Search from './componet/Search'
 import Filmlist from "./componet/Films"
 import Starrating from './componet/Starrating';
 import Modals from "./componet/Modals";
 import {connect} from "react-redux"
-import AppRouter from './router/router';
+import { BrowserRouter as Router , Switch , Route} from 'react-router-dom'
+import Discription from "./componet/Discription "
+
 
 
 
@@ -83,9 +85,26 @@ render(){
 
       
       <Search  handlesearch={this.handlesearch} handlestar={this.handlestar}/>
-      <AppRouter/>
-      <Filmlist x={this.props.filmlist.filter(el=>el.rating>=this.state.rate && el.film.toLowerCase().includes(this.state.search.trim().toLowerCase()))}/>
-      <Modals />
+     
+      <Router>
+            
+            <Switch>
+                
+                <Route exact path="/" render={()=><Fragment>
+                 <Filmlist x={this.props.filmlist.filter(el=>el.rating>=this.state.rate && el.film.toLowerCase().includes(this.state.search.trim().toLowerCase()))}/>
+                 <Modals />
+
+                 </Fragment>} />
+                    
+               
+                <Route path="/Discription/:id" exact component={Discription}/>
+
+
+            </Switch>
+
+
+        </Router>
+      
       
       
     </div>

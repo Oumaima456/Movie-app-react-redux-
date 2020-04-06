@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 import { BrowserRouter as Router , Switch , Route} from 'react-router-dom'
 import Filmlist from "../componet/Films"
 import Discription from "../componet/Discription "
@@ -8,7 +8,7 @@ const AppRouter=()=> {
             
             <Switch>
                 
-                <Route exact path="/" component={Filmlist} />
+                <Route exact path="/" render={()=><Filmlist/>} />
                     
                
                 <Route path="/Discription/:id" exact component={Discription}/>
@@ -21,4 +21,4 @@ const AppRouter=()=> {
     )
 }
 
-export default AppRouter
+export default AppRouter*/
