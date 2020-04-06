@@ -11,9 +11,8 @@ export class Discription extends Component {
 
         return (
             <div>
-                <h3>Discription page</h3>
+                <h3>Discription Film</h3>
                 <h5>{movies.discription}</h5>
-                <h5>{movies.film}</h5>
             </div>
         )
     }
